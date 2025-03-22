@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  step: one
+  ingredient: one
+  quantity: 1.5
+  unit: one
+
+two:
+  step: two
+  ingredient: two
+  quantity: 1.5
+  unit: two
