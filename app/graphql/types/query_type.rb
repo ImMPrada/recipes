@@ -35,6 +35,14 @@ module Types
       ::Category.all
     end
 
+    field :recipe, Types::RecipeType, null: true do
+      argument :id, ID, required: true
+    end
+
+    def recipe(id:)
+      ::Recipe.find(id)
+    end
+
     field :recipes, [Types::RecipeType], null: false, description: "Fetch all recipes"
 
     def recipes
