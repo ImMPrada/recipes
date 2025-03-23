@@ -1,6 +1,6 @@
 module Mutations
   module Categories
-    class Delete < Mutations::BaseMutation
+    class DeleteCategory < Mutations::BaseMutation
       argument :id, ID, required: true
 
       field :message, String, null: false
