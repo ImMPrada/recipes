@@ -62,14 +62,6 @@ For a more robust GraphQL testing experience, you can use Altair GraphQL Client:
 - Set the URL to `http://localhost:3000/graphql`
 - Start making queries!
 
-Key features available in Altair:
-
-- Query auto-completion based on your schema
-- Documentation explorer
-- Request history
-- Environment variables support
-- Collection support for saving queries
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
