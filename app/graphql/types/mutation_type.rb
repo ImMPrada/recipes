@@ -2,9 +2,9 @@
 
 module Types
   class MutationType < Types::BaseObject
-    field :create_category,
-        mutation: Mutations::Categories::CreateCategory,
-        description: "Create a new category",
+    field :create_or_find_category,
+        mutation: Mutations::Categories::CreateOrFindCategory,
+        description: "Create or find a category, based on its name",
         null: false
 
     field :delete_category,

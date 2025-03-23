@@ -1,6 +1,6 @@
 module Mutations
   module Categories
-    class CreateCategory < Mutations::BaseMutation
+    class CreateOrFindCategory < Mutations::BaseMutation
       argument :name, String, required: true
 
       field :category, Types::App::CategoryType, null: false
