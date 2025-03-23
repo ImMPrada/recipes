@@ -65,6 +65,7 @@ step_8 = Step.create!(recipe: boulevardier, order: 8, description: "Strain the c
 step_9 = Step.create!(recipe: boulevardier, order: 9, description: "Garnish with an orange peel.")
 step_10 = Step.create!(recipe: boulevardier, order: 10, description: "Enjoy!")
 
+StepIngredient.create!(step: step_2, ingredient: orange_bitters, quantity: 10.0, unit: drops)
 StepIngredient.create!(step: step_3, ingredient: sweet_vermouth, quantity: 1.0, unit: oz)
 StepIngredient.create!(step: step_4, ingredient: campari, quantity: 1.0, unit: oz)
 StepIngredient.create!(step: step_5, ingredient: bourbon, quantity: 1.0, unit: oz)
