@@ -48,5 +48,17 @@ module Types
     def recipes
       ::Recipe.all
     end
+
+    field :units, [Types::App::UnitType], null: false, description: "Fetch all units"
+
+    def units
+      ::Unit.all
+    end
+
+    field :ingredients, [Types::App::IngredientType], null: false, description: "Fetch all ingredients"
+
+    def ingredients
+      ::Ingredient.all
+    end
   end
 end

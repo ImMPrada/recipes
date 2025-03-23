@@ -26,7 +26,7 @@ This application serves as a backend API that exposes a GraphQL endpoint, allowi
 1. Clone the repository:
 
 ```bash
-git clone [repository-url]
+git clone https://github.com/ImMPrada/recipes.git
 cd recipes
 ```
 
@@ -53,6 +53,22 @@ The application will be available at `http://localhost:3000`
 ### GraphQL Playground
 
 Access the GraphQL playground at `http://localhost:3000/graphiql` to explore and test the API.
+
+### Using Altair GraphQL Client
+
+For a more robust GraphQL testing experience, you can use Altair GraphQL Client: [official website](https://altairgraphql.dev/)
+
+- Open Altair
+- Set the URL to `http://localhost:3000/graphql`
+- Start making queries!
+
+Key features available in Altair:
+
+- Query auto-completion based on your schema
+- Documentation explorer
+- Request history
+- Environment variables support
+- Collection support for saving queries
 
 ## License
 
