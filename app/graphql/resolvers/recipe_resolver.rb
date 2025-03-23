@@ -2,7 +2,7 @@
 
 module Resolvers
   class RecipeResolver < BaseResolver
-    type Types::RecipeType, null: false
+    type Types::App::RecipeType, null: false
     argument :id, ID
 
     def resolve(id:)

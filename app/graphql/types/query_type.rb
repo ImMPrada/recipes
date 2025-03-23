@@ -21,7 +21,7 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
-    field :category, Types::CategoryType, null: true do
+    field :category, Types::App::CategoryType, null: true do
       argument :id, ID, required: true
     end
 
@@ -29,13 +29,13 @@ module Types
       ::Category.find(id)
     end
 
-    field :categories, [Types::CategoryType], null: false, description: "Fetch all categories"
+    field :categories, [Types::App::CategoryType], null: false, description: "Fetch all categories"
 
     def categories
       ::Category.all
     end
 
-    field :recipe, Types::RecipeType, null: true do
+    field :recipe, Types::App::RecipeType, null: true do
       argument :id, ID, required: true
     end
 
@@ -43,7 +43,7 @@ module Types
       ::Recipe.find(id)
     end
 
-    field :recipes, [Types::RecipeType], null: false, description: "Fetch all recipes"
+    field :recipes, [Types::App::RecipeType], null: false, description: "Fetch all recipes"
 
     def recipes
       ::Recipe.all

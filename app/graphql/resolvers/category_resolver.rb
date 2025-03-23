@@ -2,7 +2,7 @@
 
 module Resolvers
   class CategoryResolver < BaseResolver
-    type Types::CategoryType, null: false
+    type Types::App::CategoryType, null: false
     argument :id, ID
 
     def resolve(id:)
