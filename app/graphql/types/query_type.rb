@@ -26,20 +26,26 @@ module Types
     end
 
     def category(id:)
-      Category.find(id)
+      ::Category.find(id)
     end
 
     field :categories, [Types::CategoryType], null: false, description: "Fetch all categories"
 
     def categories
-      Category.all
+      ::Category.all
+    end
+
+    field :recipes, [Types::RecipeType], null: false, description: "Fetch all recipes"
+
+    def recipes
+      ::Recipe.all
     end
 
     # TODO: remove me
     field :test_field, String, null: false,
       description: "An example field added by the generator"
     def test_field
-      "Hello World!"
+      "Hello World"
     end
   end
 end
